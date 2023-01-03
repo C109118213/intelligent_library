@@ -17,6 +17,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/menu_array"
+                android:minHeight="60dp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -33,7 +40,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/alice"
                         tools:src="@tools:sample/avatars" />
 
                     <ImageView
@@ -41,7 +47,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/frozen"
                         tools:src="@tools:sample/avatars" />
 
                     <ImageView
@@ -49,7 +54,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/beauty_and_the_beat"
                         tools:src="@tools:sample/avatars" />
                 </LinearLayout>
 
@@ -60,25 +64,25 @@
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/button"
+                        android:id="@+id/button1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="Button" />
+                        android:text="借閱" />
 
                     <Button
                         android:id="@+id/button2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="Button" />
+                        android:text="借閱" />
 
                     <Button
                         android:id="@+id/button3"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="Button" />
+                        android:text="借閱" />
 
                 </LinearLayout>
 
@@ -93,7 +97,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/long_hair"
                         tools:src="@tools:sample/avatars" />
 
                     <ImageView
@@ -101,7 +104,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/snow_white"
                         tools:src="@tools:sample/avatars" />
 
                     <ImageView
@@ -109,7 +111,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/monster"
                         tools:src="@tools:sample/avatars" />
                 </LinearLayout>
 
@@ -124,21 +125,21 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="Button" />
+                        android:text="借閱" />
 
                     <Button
                         android:id="@+id/button5"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="Button" />
+                        android:text="借閱" />
 
                     <Button
                         android:id="@+id/button6"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="Button" />
+                        android:text="借閱" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -152,7 +153,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/sleep_woman"
                         tools:src="@tools:sample/avatars" />
 
                     <ImageView
@@ -160,7 +160,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/sea"
                         tools:src="@tools:sample/avatars" />
 
                     <ImageView
@@ -168,7 +167,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/flower_wood_blue"
                         tools:src="@tools:sample/avatars" />
                 </LinearLayout>
 
@@ -183,34 +181,25 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="Button" />
+                        android:text="借閱" />
 
                     <Button
                         android:id="@+id/button8"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="Button" />
+                        android:text="借閱" />
 
                     <Button
                         android:id="@+id/button9"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="Button" />
+                        android:text="借閱" />
                 </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
-
-    <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="731dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
